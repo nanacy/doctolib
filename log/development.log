@@ -1,0 +1,856 @@
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (53.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDoctors (20180726132621)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "speciality" varchar, "postal_code" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726132621_create_doctors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726132621"]]
+  ↳ bin/rails:9
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-26 13:27:31.618997"], ["updated_at", "2018-07-26 13:27:31.618997"]]
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.9ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alysia"], ["last_name", "Connelly"], ["speciality", "Real-Estate"], ["postal_code", 62159], ["created_at", "2018-07-26 13:33:00.295514"], ["updated_at", "2018-07-26 13:33:00.295514"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (26.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.7ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ranee"], ["last_name", "Wisozk"], ["speciality", "Real-Estate"], ["postal_code", 35270], ["created_at", "2018-07-26 13:33:00.330434"], ["updated_at", "2018-07-26 13:33:00.330434"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (2.6ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Elijah"], ["last_name", "Hoeger"], ["speciality", "Design"], ["postal_code", 20821], ["created_at", "2018-07-26 13:33:51.116373"], ["updated_at", "2018-07-26 13:33:51.116373"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.8ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Gaylord"], ["last_name", "Anderson"], ["speciality", "Hospitality"], ["postal_code", 77327], ["created_at", "2018-07-26 13:33:51.138074"], ["updated_at", "2018-07-26 13:33:51.138074"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.8ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Karolyn"], ["last_name", "Schneider"], ["speciality", "Education"], ["postal_code", 60120], ["created_at", "2018-07-26 13:33:51.150969"], ["updated_at", "2018-07-26 13:33:51.150969"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.8ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ashli"], ["last_name", "Bauch"], ["speciality", "Consulting"], ["postal_code", 35001], ["created_at", "2018-07-26 13:33:51.167009"], ["updated_at", "2018-07-26 13:33:51.167009"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.7ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jordon"], ["last_name", "Huel"], ["speciality", "IT"], ["postal_code", 32985], ["created_at", "2018-07-26 13:33:51.184954"], ["updated_at", "2018-07-26 13:33:51.184954"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.8ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Herb"], ["last_name", "Schamberger"], ["speciality", "Mining"], ["postal_code", 33552], ["created_at", "2018-07-26 13:33:51.197007"], ["updated_at", "2018-07-26 13:33:51.197007"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (0.7ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kendal"], ["last_name", "Schamberger"], ["speciality", "Retail"], ["postal_code", 85995], ["created_at", "2018-07-26 13:33:51.209247"], ["updated_at", "2018-07-26 13:33:51.209247"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[36mDoctor Create (1.2ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Benedict"], ["last_name", "Murazik"], ["speciality", "Design"], ["postal_code", 79208], ["created_at", "2018-07-26 13:33:51.221727"], ["updated_at", "2018-07-26 13:33:51.221727"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePatients (20180726133533)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180726133533_create_patients.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "patients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726133533_create_patients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726133533"]]
+  ↳ bin/rails:9
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (1.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mika"], ["last_name", "Mante"], ["created_at", "2018-07-26 13:38:27.912710"], ["updated_at", "2018-07-26 13:38:27.912710"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.8ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Velvet"], ["last_name", "Cole"], ["created_at", "2018-07-26 13:38:27.930284"], ["updated_at", "2018-07-26 13:38:27.930284"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Hal"], ["last_name", "O'Hara"], ["created_at", "2018-07-26 13:38:27.942268"], ["updated_at", "2018-07-26 13:38:27.942268"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Cyndi"], ["last_name", "Jakubowski"], ["created_at", "2018-07-26 13:38:27.953177"], ["updated_at", "2018-07-26 13:38:27.953177"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.8ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Otto"], ["last_name", "Jakubowski"], ["created_at", "2018-07-26 13:38:27.965251"], ["updated_at", "2018-07-26 13:38:27.965251"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Shanika"], ["last_name", "Herman"], ["created_at", "2018-07-26 13:38:27.976882"], ["updated_at", "2018-07-26 13:38:27.976882"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Amie"], ["last_name", "Schaden"], ["created_at", "2018-07-26 13:38:27.990757"], ["updated_at", "2018-07-26 13:38:27.990757"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Magan"], ["last_name", "Schumm"], ["created_at", "2018-07-26 13:38:28.002662"], ["updated_at", "2018-07-26 13:38:28.002662"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.8ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Frederick"], ["last_name", "Bosco"], ["created_at", "2018-07-26 13:38:28.015116"], ["updated_at", "2018-07-26 13:38:28.015116"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (0.8ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Kory"], ["last_name", "Dickinson"], ["created_at", "2018-07-26 13:38:28.033350"], ["updated_at", "2018-07-26 13:38:28.033350"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20180726134138)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180726134138_create_appointments.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726134138_create_appointments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134138"]]
+  ↳ bin/rails:9
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to JoinDoctorPatientInAppointment (20180726134416)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "appointments" ADD "doctor_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "appointments" ADD "patient_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_patient_id" ON "appointments" ("patient_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134416"]]
+  ↳ bin/rails:9
+  [1m[35m (27.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "patients"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "doctors"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "doctors"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "appointments"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "appointments"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to JoinDoctorPatientInAppointment (20180726134416)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aappointments" ("id" integer NOT NULL PRIMARY KEY, "date" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "doctor_id" integer DEFAULT NULL, "patient_id" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "tindex_aappointments_on_patient_id" ON "aappointments" ("patient_id")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "tindex_aappointments_on_doctor_id" ON "aappointments" ("doctor_id")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aappointments" ("id","date","created_at","updated_at","doctor_id","patient_id")
+                     SELECT "id","date","created_at","updated_at","doctor_id","patient_id" FROM "appointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mDROP TABLE "appointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer NOT NULL PRIMARY KEY, "date" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "doctor_id" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "appointments" ("id","date","created_at","updated_at","doctor_id")
+                     SELECT "id","date","created_at","updated_at","doctor_id" FROM "aappointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "aappointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aappointments" ("id" integer NOT NULL PRIMARY KEY, "date" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "doctor_id" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "tindex_aappointments_on_doctor_id" ON "aappointments" ("doctor_id")[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "aappointments" ("id","date","created_at","updated_at","doctor_id")
+                     SELECT "id","date","created_at","updated_at","doctor_id" FROM "appointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "appointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer NOT NULL PRIMARY KEY, "date" datetime DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "appointments" ("id","date","created_at","updated_at")
+                     SELECT "id","date","created_at","updated_at" FROM "aappointments"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "aappointments"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180726134416"]]
+  ↳ bin/rails:9
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20180726134138)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "appointments"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180726134138"]]
+  ↳ bin/rails:9
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePatients (20180726133533)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "patients"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180726133533"]]
+  ↳ bin/rails:9
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDoctors (20180726132621)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "doctors"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180726132621"]]
+  ↳ bin/rails:9
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDoctors (20180726132621)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180726132621_create_doctors.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "speciality" varchar, "postal_code" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726132621_create_doctors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726132621"]]
+  ↳ bin/rails:9
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePatients (20180726133533)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "patients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726133533_create_patients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726133533"]]
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20180726134138)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726134138_create_appointments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134138"]]
+  ↳ bin/rails:9
+  [1m[35m (15.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to JoinDoctorPatientInAppointment (20180726134416)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "appointments" ADD "doctor_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "appointments" ADD "patient_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_patient_id" ON "appointments" ("patient_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134416"]]
+  ↳ bin/rails:9
+  [1m[35m (31.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "appointments"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 13:49:35"], ["created_at", "2018-07-26 14:00:07.228244"], ["updated_at", "2018-07-26 14:00:07.228244"], ["doctor_id", 4], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 00:58:07"], ["created_at", "2018-07-26 14:00:07.243995"], ["updated_at", "2018-07-26 14:00:07.243995"], ["doctor_id", 9], ["patient_id", 5]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-24 23:27:05"], ["created_at", "2018-07-26 14:00:07.258045"], ["updated_at", "2018-07-26 14:00:07.258045"], ["doctor_id", 8], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (0.8ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 02:36:30"], ["created_at", "2018-07-26 14:00:07.272305"], ["updated_at", "2018-07-26 14:00:07.272305"], ["doctor_id", 9], ["patient_id", 10]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (15.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (0.9ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 14:37:00"], ["created_at", "2018-07-26 14:00:07.300390"], ["updated_at", "2018-07-26 14:00:07.300390"], ["doctor_id", 1], ["patient_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 22:46:58"], ["created_at", "2018-07-26 14:00:07.321187"], ["updated_at", "2018-07-26 14:00:07.321187"], ["doctor_id", 7], ["patient_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (0.9ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 17:18:49"], ["created_at", "2018-07-26 14:00:07.335734"], ["updated_at", "2018-07-26 14:00:07.335734"], ["doctor_id", 4], ["patient_id", 3]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.0ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 08:11:33"], ["created_at", "2018-07-26 14:00:07.356384"], ["updated_at", "2018-07-26 14:00:07.356384"], ["doctor_id", 10], ["patient_id", 8]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 12:27:36"], ["created_at", "2018-07-26 14:00:07.374566"], ["updated_at", "2018-07-26 14:00:07.374566"], ["doctor_id", 4], ["patient_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (3.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-24 22:54:27"], ["created_at", "2018-07-26 14:00:07.407956"], ["updated_at", "2018-07-26 14:00:07.407956"], ["doctor_id", 8], ["patient_id", 6]]
+  ↳ db/seeds.rb:18
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDoctors (20180726132621)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "speciality" varchar, "postal_code" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726132621_create_doctors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726132621"]]
+  ↳ bin/rails:9
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePatients (20180726133533)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "patients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726133533_create_patients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726133533"]]
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20180726134138)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726134138_create_appointments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134138"]]
+  ↳ bin/rails:9
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to JoinDoctorPatientInAppointment (20180726134416)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "appointments" ADD "doctor_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "appointments" ADD "patient_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_patient_id" ON "appointments" ("patient_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134416"]]
+  ↳ bin/rails:9
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-26 14:02:07.586111"], ["updated_at", "2018-07-26 14:02:07.586111"]]
+  ↳ bin/rails:9
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (2.0ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 23:49:10"], ["created_at", "2018-07-26 14:02:24.516699"], ["updated_at", "2018-07-26 14:02:24.516699"], ["doctor_id", 8], ["patient_id", 5]]
+  ↳ db/seeds.rb:18
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 19:17:24"], ["created_at", "2018-07-26 14:02:24.561138"], ["updated_at", "2018-07-26 14:02:24.561138"], ["doctor_id", 8], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (2.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 18:46:33"], ["created_at", "2018-07-26 14:02:24.578824"], ["updated_at", "2018-07-26 14:02:24.578824"], ["doctor_id", 10], ["patient_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (2.6ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 23:11:38"], ["created_at", "2018-07-26 14:02:24.595376"], ["updated_at", "2018-07-26 14:02:24.595376"], ["doctor_id", 6], ["patient_id", 8]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 08:04:31"], ["created_at", "2018-07-26 14:02:24.631403"], ["updated_at", "2018-07-26 14:02:24.631403"], ["doctor_id", 4], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (2.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 05:18:47"], ["created_at", "2018-07-26 14:02:24.657081"], ["updated_at", "2018-07-26 14:02:24.657081"], ["doctor_id", 1], ["patient_id", 4]]
+  ↳ db/seeds.rb:18
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.2ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 09:08:04"], ["created_at", "2018-07-26 14:02:24.678475"], ["updated_at", "2018-07-26 14:02:24.678475"], ["doctor_id", 8], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (3.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 14:58:28"], ["created_at", "2018-07-26 14:02:24.708542"], ["updated_at", "2018-07-26 14:02:24.708542"], ["doctor_id", 9], ["patient_id", 7]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.1ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 05:35:42"], ["created_at", "2018-07-26 14:02:24.729255"], ["updated_at", "2018-07-26 14:02:24.729255"], ["doctor_id", 8], ["patient_id", 10]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (2.7ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 02:31:07"], ["created_at", "2018-07-26 14:02:24.753882"], ["updated_at", "2018-07-26 14:02:24.753882"], ["doctor_id", 4], ["patient_id", 7]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateDoctors (20180726132621)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "speciality" varchar, "postal_code" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726132621_create_doctors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726132621"]]
+  ↳ bin/rails:9
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePatients (20180726133533)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "patients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726133533_create_patients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726133533"]]
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateAppointments (20180726134138)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "appointments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180726134138_create_appointments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134138"]]
+  ↳ bin/rails:9
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to JoinDoctorPatientInAppointment (20180726134416)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "appointments" ADD "doctor_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_doctor_id" ON "appointments" ("doctor_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "appointments" ADD "patient_id" integer[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_appointments_on_patient_id" ON "appointments" ("patient_id")[0m
+  ↳ db/migrate/20180726134416_join_doctor_patient_in_appointment.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180726134416"]]
+  ↳ bin/rails:9
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-26 14:02:48.518610"], ["updated_at", "2018-07-26 14:02:48.518610"]]
+  ↳ bin/rails:9
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (5.7ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Roy"], ["last_name", "Harber"], ["speciality", "Community-Services"], ["postal_code", 98149], ["created_at", "2018-07-26 14:02:56.534289"], ["updated_at", "2018-07-26 14:02:56.534289"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.0ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Galina"], ["last_name", "Legros"], ["speciality", "Consulting"], ["postal_code", 39316], ["created_at", "2018-07-26 14:02:56.561766"], ["updated_at", "2018-07-26 14:02:56.561766"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.1ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Theresa"], ["last_name", "Dickinson"], ["speciality", "Accounting"], ["postal_code", 18841], ["created_at", "2018-07-26 14:02:56.583291"], ["updated_at", "2018-07-26 14:02:56.583291"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.0ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Malik"], ["last_name", "Wolff"], ["speciality", "Administration"], ["postal_code", 93191], ["created_at", "2018-07-26 14:02:56.599373"], ["updated_at", "2018-07-26 14:02:56.599373"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (0.9ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ronnie"], ["last_name", "Berge"], ["speciality", "Marketing"], ["postal_code", 88901], ["created_at", "2018-07-26 14:02:56.625059"], ["updated_at", "2018-07-26 14:02:56.625059"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.0ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Myrle"], ["last_name", "Weissnat"], ["speciality", "Technology"], ["postal_code", 68187], ["created_at", "2018-07-26 14:02:56.639037"], ["updated_at", "2018-07-26 14:02:56.639037"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (24.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (5.6ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kristel"], ["last_name", "Veum"], ["speciality", "Marketing"], ["postal_code", 92124], ["created_at", "2018-07-26 14:02:56.703301"], ["updated_at", "2018-07-26 14:02:56.703301"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (10.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (3.9ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kirby"], ["last_name", "Gottlieb"], ["speciality", "Construction"], ["postal_code", 62606], ["created_at", "2018-07-26 14:02:56.736858"], ["updated_at", "2018-07-26 14:02:56.736858"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.2ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Granville"], ["last_name", "Fisher"], ["speciality", "Manufacturing"], ["postal_code", 97867], ["created_at", "2018-07-26 14:02:56.763744"], ["updated_at", "2018-07-26 14:02:56.763744"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[36mDoctor Create (1.9ms)[0m  [1m[32mINSERT INTO "doctors" ("first_name", "last_name", "speciality", "postal_code", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Francesco"], ["last_name", "Stokes"], ["speciality", "Hospitality"], ["postal_code", 44288], ["created_at", "2018-07-26 14:02:56.798208"], ["updated_at", "2018-07-26 14:02:56.798208"]]
+  ↳ db/seeds.rb:6
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (1.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mary"], ["last_name", "Fritsch"], ["created_at", "2018-07-26 14:02:56.881828"], ["updated_at", "2018-07-26 14:02:56.881828"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (4.2ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Makeda"], ["last_name", "Bartoletti"], ["created_at", "2018-07-26 14:02:56.911205"], ["updated_at", "2018-07-26 14:02:56.911205"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (8.6ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Houston"], ["last_name", "Hamill"], ["created_at", "2018-07-26 14:02:56.948998"], ["updated_at", "2018-07-26 14:02:56.948998"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (2.9ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Milagros"], ["last_name", "Rowe"], ["created_at", "2018-07-26 14:02:56.976218"], ["updated_at", "2018-07-26 14:02:56.976218"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (1.1ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Vanna"], ["last_name", "Conroy"], ["created_at", "2018-07-26 14:02:57.001516"], ["updated_at", "2018-07-26 14:02:57.001516"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (3.4ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Jessie"], ["last_name", "Torp"], ["created_at", "2018-07-26 14:02:57.033028"], ["updated_at", "2018-07-26 14:02:57.033028"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (3.0ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "George"], ["last_name", "Hahn"], ["created_at", "2018-07-26 14:02:57.058356"], ["updated_at", "2018-07-26 14:02:57.058356"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (3.3ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Frankie"], ["last_name", "Cummings"], ["created_at", "2018-07-26 14:02:57.082001"], ["updated_at", "2018-07-26 14:02:57.082001"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (39.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (1.0ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Narcisa"], ["last_name", "Connelly"], ["created_at", "2018-07-26 14:02:57.133170"], ["updated_at", "2018-07-26 14:02:57.133170"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPatient Create (4.5ms)[0m  [1m[32mINSERT INTO "patients" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Candelaria"], ["last_name", "Beatty"], ["created_at", "2018-07-26 14:02:57.167933"], ["updated_at", "2018-07-26 14:02:57.167933"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (22.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.6ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-24 23:24:22"], ["created_at", "2018-07-26 14:02:57.269179"], ["updated_at", "2018-07-26 14:02:57.269179"], ["doctor_id", 3], ["patient_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 08:54:25"], ["created_at", "2018-07-26 14:02:57.302154"], ["updated_at", "2018-07-26 14:02:57.302154"], ["doctor_id", 1], ["patient_id", 2]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.4ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 02:55:21"], ["created_at", "2018-07-26 14:02:57.316464"], ["updated_at", "2018-07-26 14:02:57.316464"], ["doctor_id", 10], ["patient_id", 10]]
+  ↳ db/seeds.rb:18
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.0ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 15:13:05"], ["created_at", "2018-07-26 14:02:57.336408"], ["updated_at", "2018-07-26 14:02:57.336408"], ["doctor_id", 3], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 04:39:09"], ["created_at", "2018-07-26 14:02:57.363936"], ["updated_at", "2018-07-26 14:02:57.363936"], ["doctor_id", 2], ["patient_id", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.5ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-26 07:40:28"], ["created_at", "2018-07-26 14:02:57.402699"], ["updated_at", "2018-07-26 14:02:57.402699"], ["doctor_id", 6], ["patient_id", 5]]
+  ↳ db/seeds.rb:18
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.0ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 21:53:08"], ["created_at", "2018-07-26 14:02:57.430780"], ["updated_at", "2018-07-26 14:02:57.430780"], ["doctor_id", 5], ["patient_id", 8]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.3ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-24 22:12:00"], ["created_at", "2018-07-26 14:02:57.450496"], ["updated_at", "2018-07-26 14:02:57.450496"], ["doctor_id", 2], ["patient_id", 9]]
+  ↳ db/seeds.rb:18
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (1.9ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 02:06:26"], ["created_at", "2018-07-26 14:02:57.482358"], ["updated_at", "2018-07-26 14:02:57.482358"], ["doctor_id", 1], ["patient_id", 8]]
+  ↳ db/seeds.rb:18
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[36mAppointment Create (5.0ms)[0m  [1m[32mINSERT INTO "appointments" ("date", "created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2018-07-25 13:48:10"], ["created_at", "2018-07-26 14:02:57.509407"], ["updated_at", "2018-07-26 14:02:57.509407"], ["doctor_id", 2], ["patient_id", 5]]
+  ↳ db/seeds.rb:18
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "doctors"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "patients"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "doctors"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "patients"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "appointments"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDoctor Create (1.3ms)[0m  [1m[32mINSERT INTO "doctors" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-26 14:27:57.691046"], ["updated_at", "2018-07-26 14:27:57.691046"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPatient Create (0.7ms)[0m  [1m[32mINSERT INTO "patients" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-07-26 14:28:06.124444"], ["updated_at", "2018-07-26 14:28:06.124444"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAppointment Create (1.0ms)[0m  [1m[32mINSERT INTO "appointments" ("created_at", "updated_at", "doctor_id", "patient_id") VALUES (?, ?, ?, ?)[0m  [["created_at", "2018-07-26 14:28:14.524231"], ["updated_at", "2018-07-26 14:28:14.524231"], ["doctor_id", 11], ["patient_id", 11]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPatient Load (1.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" INNER JOIN "appointments" ON "patients"."id" = "appointments"."patient_id" WHERE "appointments"."doctor_id" = ? LIMIT ?[0m  [["doctor_id", 11], ["LIMIT", 11]]
+  [1m[36mPatient Load (1.1ms)[0m  [1m[34mSELECT  "patients".* FROM "patients" INNER JOIN "appointments" ON "patients"."id" = "appointments"."patient_id" WHERE "appointments"."doctor_id" = ? ORDER BY "patients"."id" ASC LIMIT ?[0m  [["doctor_id", 11], ["LIMIT", 1]]
